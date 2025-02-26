@@ -1,3 +1,10 @@
+html {
+  aspect-ratio: 16 / 11;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -282,15 +289,13 @@ footer {
   border-top: 2px solid rgba(255, 255, 255, 0.596);
   display: grid;
   grid-template-columns: repeat(1, 2fr);
-  
 }
 
 footer p {
   margin-top: 50px;
   color: #b9a2a2;
-  margin-right:200px;
+  margin-right: 200px;
   max-width: 500px;
-  
 }
 
 .nav-logo-o {
@@ -305,44 +310,33 @@ footer p {
   gap: 70px;
 }
 
-
-
-
-
 footer ul {
   flex-direction: column;
   gap: 56px;
   margin-left: 800px;
 }
 
-
-.why{
+.why {
   margin-top: -390px;
 }
 
-.why ul a li{
+.why ul a li {
   color: #b9a2a2;
-
 }
 
-
-.why ul a li:hover{
+.why ul a li:hover {
   color: #1d4ed8;
   cursor: pointer;
-
 }
 
-
-
-.why h1{
-  
+.why h1 {
   color: #fff;
 }
 
-.finish{
+.finish {
   border-top: 2px solid rgba(255, 255, 255, 0.596);
 }
-.finish h4{
+.finish h4 {
   margin-bottom: 10px;
   color: #807878;
   font-size: 15px;
@@ -352,8 +346,7 @@ footer ul {
   justify-content: center;
 }
 
-
-.blurrr{
+.blurrr {
   margin-top: 450px;
   margin-left: 50px;
   position: absolute;
@@ -361,11 +354,25 @@ footer ul {
   z-index: -1;
 }
 
+.balloon {
+  position: fixed;
+  bottom: 20px; /* Yükseklik */
+  right: 20px; /* Sağda konum */
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out; /* Yumuşak kaybolma efekti */
+}
 
-
-
-
-
-
-
-
+.balloon:hover {
+  background-color: #0056b3;
+}

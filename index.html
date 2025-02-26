@@ -14,22 +14,25 @@
 </head>
 
 <body>
+
+
     <nav>
+        
         <div class="nav-logo">
             <img src="images/logo.png" alt="">
         </div>
         <ul>
-            <li class="link"><a href="">Home</a></li>
-            <li class="link"><a href="">Features</a></li>
-            <li class="link"><a href="">Pricing</a></li>
-            <li class="link"><a href="">About</a></li>
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#features">Features</a></li>
+            <li class="link"><a href="#pricing">Pricing</a></li>
+            <li class="link"><a href="#about">About</a></li>
 
         </ul>
         <button class="btn">Hire Me</button>
 
     </nav>
 
-    <header class="container">
+    <header class="container" id="home">
         <div class="content">
             <span class="blur"></span>
             <span class="blur"></span>
@@ -50,7 +53,8 @@
         <h1>OUR FEATURES</h1>
     </div>
 
-    <section class="features">
+
+    <section class="features" id="features">
         <div class="box">
             <div class="iconn">
                 <svg class="icon icon-banknote" width="30" height="30">
@@ -102,7 +106,7 @@
         <h1>OUR PRICING</h1>
     </div>
 
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
         <div class="pri-box">
 
             <div class="content-1">
@@ -146,7 +150,7 @@
     </section>
 
 
-    <footer>
+    <footer id="about">
         <span class="blurrr"></span>
         <span class="blurrr"></span>
         <div class="nav-logo-o">
@@ -172,10 +176,18 @@
         <div class="why">
             <ul>
                 <h1>WHY US</h1>
-                <a href=""><li>800+ Experience</li></a>
-                <a href=""><li>Experienced Staff</li></a>
-                <a href=""><li>Fast Delivery</li></a>
-                <a href=""><li>Customer Representatives</li></a>
+                <a href="">
+                    <li>800+ Experience</li>
+                </a>
+                <a href="">
+                    <li>Experienced Staff</li>
+                </a>
+                <a href="">
+                    <li>Fast Delivery</li>
+                </a>
+                <a href="">
+                    <li>Customer Representatives</li>
+                </a>
             </ul>
         </div>
 
@@ -185,14 +197,17 @@
 
 
         <div class="finish">
-            <h4>Copyright © 2025 Create<span><a href="https://github.com/wlorez/portfolio" target="_blank">⠀Özgür Yavuz</a></span> </h4>
+            <h4>Copyright © 2025 Create<span><a href="https://github.com/wlorez/portfolio" target="_blank">⠀Özgür
+                        Yavuz</a></span> </h4>
         </div>
     </footer>
-    
 
 
 
 
+    <div id="balloon" class="balloon" onclick="scrollToTop()">↑</div>
+
+    <script src="./home.js"></script>
 
 
 </body>
