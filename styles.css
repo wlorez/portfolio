@@ -280,12 +280,21 @@ footer {
   margin: 0 auto;
   margin-top: 200px;
   border-top: 2px solid rgba(255, 255, 255, 0.596);
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  
+}
+
+footer p {
+  margin-top: 50px;
+  color: #b9a2a2;
+  margin-right:200px;
+  max-width: 500px;
+  
 }
 
 .nav-logo-o {
   width: 100px;
-  display: flex;
-  justify-content: space-between;
   margin-top: 100px;
 }
 
@@ -293,18 +302,70 @@ footer {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   margin-top: 50px;
+  gap: 70px;
 }
 
 
-footer p {
-  margin-top: 50px;
-  max-width: 550px;
-  color: #b9a2a2;
+
+
+
+footer ul {
+  flex-direction: column;
+  gap: 56px;
+  margin-left: 800px;
 }
+
 
 .why{
-  
+  margin-top: -390px;
 }
+
+.why ul a li{
+  color: #b9a2a2;
+
+}
+
+
+.why ul a li:hover{
+  color: #1d4ed8;
+  cursor: pointer;
+
+}
+
+
+
+.why h1{
+  
+  color: #fff;
+}
+
+.finish{
+  border-top: 2px solid rgba(255, 255, 255, 0.596);
+}
+.finish h4{
+  margin-bottom: 10px;
+  color: #807878;
+  font-size: 15px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.blurrr{
+  margin-top: 450px;
+  margin-left: 50px;
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -1;
+}
+
+
+
+
+
+
 
 
 
